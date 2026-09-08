@@ -1,486 +1,898 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>ZW Portofolio - TailwindCss</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <!-- Logo -->
-                <div class="px-4">
-                    <a href="#home" class="text-primary block py-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1857.69 600" width="90">
-                            <g>
-                                <g>
-                                    <path d="M750.66,1254.62v-79.68l122.2-432.22H761.71V665.38H966.94V738l-122.2,439.25H964.26v77.34Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                        
-                                    <path d="M1067.34,1254.62V665.38h89.72v589.24Z" transform="translate(-31.15 -660)" fill="currentColor" />
-                        
-                                    <path
-                                        d="M1288.26,1254.62V665.38h70.31l124.88,353.54-6.36-160.7V665.38h80.68v589.24h-63.61L1365.93,888.69l5,154.67v211.26Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                        
-                                    <path d="M1687.3,1254.62V665.38h197.53v77.34H1777V914.13h102.45V989.8H1777v187.48h111.83v77.34Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                                </g>
-                        
-                                <g>
-                                    <path
-                                        d="M636.39,696.32a116.85,116.85,0,0,0-78.74-36.16h-.31l-.45,0-.94,0h-.16c-1.41-.05-2.84-.08-4.27-.08-24.94,0-50,7.84-71.47,22.21-22.21,13.17-42.81,31.28-61.43,54.09-24.32,29.76-44.07,66.12-58.71,108.07q-5.25,15-9.8,30.61-4.56-15.54-9.81-30.62c-14.63-41.94-34.38-78.3-58.7-108.06-18.63-22.81-39.23-40.93-61.44-54.1-21.43-14.36-46.52-22.2-71.47-22.2-1.42,0-2.85,0-4.26.08l-1.1,0-.45,0h-.31A117.74,117.74,0,0,0,31.15,777.89a41.28,41.28,0,1,0,82.56,0,35,35,0,0,1,32.67-35,48.91,48.91,0,0,1,19.75,4.43,107.46,107.46,0,0,1,9.84,4.92l.75.54a41.13,41.13,0,0,0,7.41,4.49c32.1,21.63,60,62.12,78.26,114.46,39,111.73,45.53,256.24,46.47,317-.21,17.87,0,29,.06,30.87,0,0,0,.05,0,.07,0,.48,0,.95.07,1.42,0,.22,0,.44,0,.66,0,.52.1,1,.15,1.54l.06.52c.06.5.14,1,.22,1.49,0,.19.05.37.09.56.08.45.17.91.27,1.36,0,.22.08.44.13.66.1.4.2.8.31,1.2s.13.52.2.78.21.7.32,1.05.18.6.28.9.21.61.32.91.24.67.37,1,.22.53.33.79.29.71.45,1.06.23.48.34.72.34.73.52,1.09l.36.67c.19.36.38.73.59,1.08s.26.44.39.66.41.7.63,1l.44.66.65,1,.51.7c.22.29.43.59.66.88l.59.73.64.78.69.77c.2.23.4.46.61.68s.52.54.79.8.38.39.58.58.58.56.88.83l.54.49,1,.84.5.41c.36.29.71.56,1.08.83l.47.36,1.15.8.46.31c.4.26.8.52,1.21.77l.45.27c.42.24.84.48,1.27.71l.46.25c.42.23.85.44,1.29.65l.48.24,1.31.58.52.22,1.31.51.57.2c.43.16.86.3,1.3.44l.63.19c.42.13.85.25,1.28.36l.68.18,1.27.28c.24.06.49.11.73.15.42.08.84.16,1.27.22.25,0,.5.08.76.12l1.28.16.76.08,1.34.1.69,0,.78,0h2.18c.57,0,1.13,0,1.7-.08l.36,0c.58,0,1.17-.1,1.74-.18l.32,0c.58-.07,1.16-.16,1.74-.26l.31-.05c.57-.11,1.13-.22,1.69-.35l.34-.07c.55-.13,1.09-.27,1.63-.42l.36-.1c.52-.15,1-.32,1.55-.49l.4-.13c.5-.17,1-.35,1.48-.54l.43-.17,1.41-.59.44-.2c.46-.21.91-.43,1.35-.65l.45-.23c.44-.23.87-.46,1.3-.71l.45-.25c.43-.25.85-.51,1.27-.77l.42-.26c.42-.28.84-.56,1.25-.85l.38-.27c.42-.3.83-.61,1.24-.93a3.92,3.92,0,0,0,.32-.25c.43-.33.84-.68,1.25-1l.26-.22c.43-.37.85-.76,1.26-1.15l.19-.17c.43-.41.85-.84,1.26-1.27l.12-.12c.43-.45.85-.92,1.26-1.39l.06-.06c.42-.5.84-1,1.24-1.52h0a41.47,41.47,0,0,0,5.91-10.29l0-.09c.22-.55.43-1.12.62-1.69a2,2,0,0,0,.08-.22c.18-.52.33-1,.49-1.57l.12-.39c.13-.47.25-.94.36-1.42.05-.19.11-.39.15-.58.1-.42.18-.84.26-1.26.05-.26.11-.51.15-.77s.12-.74.17-1.11.11-.63.15-1,.07-.68.1-1,.08-.71.1-1.07,0-.69.06-1,0-.7.05-1v-.1c.05-1.89.27-13,0-30.87.91-60.78,7.36-205.26,46.34-317,18.26-52.34,46.16-92.83,78.26-114.47a40.51,40.51,0,0,0,7.41-4.48l.74-.54a106.52,106.52,0,0,1,9.86-4.92,48.69,48.69,0,0,1,19.73-4.43,35,35,0,0,1,32.68,35,41.28,41.28,0,1,0,82.55,0A117.54,117.54,0,0,0,636.39,696.32Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                                </g>
-                            </g>
-                        </svg>
-                    </a>                    
-                </div>
-                
-                <!-- Navigation -->
-                <!-- Nav Mobile -->
-                <div class="flex items-center px-4">
-                    <!-- Toggle Button -->
-                    <!-- ketika ukuran layar Large sembunyikan hamburger 'lg:hidden' -->
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-                    <!-- Nav Menu -->
-                    <!-- ukuran layar Small menu tidak ditampilkan 'hidden' -->
-                    <!-- ketika ukuran layar Large tampilkan menu 'lg:block' -->
-                    <!-- ketika menu ditampilkan berjejer horizontal full  'lg:static' -->
-                    <!-- ketika ukuran layar Large sembunyikan bayangan dan sudut membulat 'lg:shadow-none lg:rounded-none' -->
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                        <!-- tampilan Nav Menu mobile berurutan -->
-                        <!-- ketika ukuran layar Large jejerkan Nav Menu 'lg:flex'  -->
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
-                            </li>
-                            <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
-                            </li>
-                            <li class="group">
-                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
-                            </li>
-                            <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
-                            </li>
-                            <li class="group">
-                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <!-- Logo -->
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1857.69 600"
+                width="90"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M750.66,1254.62v-79.68l122.2-432.22H761.71V665.38H966.94V738l-122.2,439.25H964.26v77.34Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
 
-                </div> 
-            </div>
+                    <path
+                      d="M1067.34,1254.62V665.38h89.72v589.24Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+
+                    <path
+                      d="M1288.26,1254.62V665.38h70.31l124.88,353.54-6.36-160.7V665.38h80.68v589.24h-63.61L1365.93,888.69l5,154.67v211.26Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+
+                    <path
+                      d="M1687.3,1254.62V665.38h197.53v77.34H1777V914.13h102.45V989.8H1777v187.48h111.83v77.34Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+                  </g>
+
+                  <g>
+                    <path
+                      d="M636.39,696.32a116.85,116.85,0,0,0-78.74-36.16h-.31l-.45,0-.94,0h-.16c-1.41-.05-2.84-.08-4.27-.08-24.94,0-50,7.84-71.47,22.21-22.21,13.17-42.81,31.28-61.43,54.09-24.32,29.76-44.07,66.12-58.71,108.07q-5.25,15-9.8,30.61-4.56-15.54-9.81-30.62c-14.63-41.94-34.38-78.3-58.7-108.06-18.63-22.81-39.23-40.93-61.44-54.1-21.43-14.36-46.52-22.2-71.47-22.2-1.42,0-2.85,0-4.26.08l-1.1,0-.45,0h-.31A117.74,117.74,0,0,0,31.15,777.89a41.28,41.28,0,1,0,82.56,0,35,35,0,0,1,32.67-35,48.91,48.91,0,0,1,19.75,4.43,107.46,107.46,0,0,1,9.84,4.92l.75.54a41.13,41.13,0,0,0,7.41,4.49c32.1,21.63,60,62.12,78.26,114.46,39,111.73,45.53,256.24,46.47,317-.21,17.87,0,29,.06,30.87,0,0,0,.05,0,.07,0,.48,0,.95.07,1.42,0,.22,0,.44,0,.66,0,.52.1,1,.15,1.54l.06.52c.06.5.14,1,.22,1.49,0,.19.05.37.09.56.08.45.17.91.27,1.36,0,.22.08.44.13.66.1.4.2.8.31,1.2s.13.52.2.78.21.7.32,1.05.18.6.28.9.21.61.32.91.24.67.37,1,.22.53.33.79.29.71.45,1.06.23.48.34.72.34.73.52,1.09l.36.67c.19.36.38.73.59,1.08s.26.44.39.66.41.7.63,1l.44.66.65,1,.51.7c.22.29.43.59.66.88l.59.73.64.78.69.77c.2.23.4.46.61.68s.52.54.79.8.38.39.58.58.58.56.88.83l.54.49,1,.84.5.41c.36.29.71.56,1.08.83l.47.36,1.15.8.46.31c.4.26.8.52,1.21.77l.45.27c.42.24.84.48,1.27.71l.46.25c.42.23.85.44,1.29.65l.48.24,1.31.58.52.22,1.31.51.57.2c.43.16.86.3,1.3.44l.63.19c.42.13.85.25,1.28.36l.68.18,1.27.28c.24.06.49.11.73.15.42.08.84.16,1.27.22.25,0,.5.08.76.12l1.28.16.76.08,1.34.1.69,0,.78,0h2.18c.57,0,1.13,0,1.7-.08l.36,0c.58,0,1.17-.1,1.74-.18l.32,0c.58-.07,1.16-.16,1.74-.26l.31-.05c.57-.11,1.13-.22,1.69-.35l.34-.07c.55-.13,1.09-.27,1.63-.42l.36-.1c.52-.15,1-.32,1.55-.49l.4-.13c.5-.17,1-.35,1.48-.54l.43-.17,1.41-.59.44-.2c.46-.21.91-.43,1.35-.65l.45-.23c.44-.23.87-.46,1.3-.71l.45-.25c.43-.25.85-.51,1.27-.77l.42-.26c.42-.28.84-.56,1.25-.85l.38-.27c.42-.3.83-.61,1.24-.93a3.92,3.92,0,0,0,.32-.25c.43-.33.84-.68,1.25-1l.26-.22c.43-.37.85-.76,1.26-1.15l.19-.17c.43-.41.85-.84,1.26-1.27l.12-.12c.43-.45.85-.92,1.26-1.39l.06-.06c.42-.5.84-1,1.24-1.52h0a41.47,41.47,0,0,0,5.91-10.29l0-.09c.22-.55.43-1.12.62-1.69a2,2,0,0,0,.08-.22c.18-.52.33-1,.49-1.57l.12-.39c.13-.47.25-.94.36-1.42.05-.19.11-.39.15-.58.1-.42.18-.84.26-1.26.05-.26.11-.51.15-.77s.12-.74.17-1.11.11-.63.15-1,.07-.68.1-1,.08-.71.1-1.07,0-.69.06-1,0-.7.05-1v-.1c.05-1.89.27-13,0-30.87.91-60.78,7.36-205.26,46.34-317,18.26-52.34,46.16-92.83,78.26-114.47a40.51,40.51,0,0,0,7.41-4.48l.74-.54a106.52,106.52,0,0,1,9.86-4.92,48.69,48.69,0,0,1,19.73-4.43,35,35,0,0,1,32.68,35,41.28,41.28,0,1,0,82.55,0A117.54,117.54,0,0,0,636.39,696.32Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Navigation -->
+          <!-- Nav Mobile -->
+          <div class="flex items-center px-4">
+            <!-- Toggle Button -->
+            <!-- ketika ukuran layar Large sembunyikan hamburger 'lg:hidden' -->
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <!-- Nav Menu -->
+            <!-- ukuran layar Small menu tidak ditampilkan 'hidden' -->
+            <!-- ketika ukuran layar Large tampilkan menu 'lg:block' -->
+            <!-- ketika menu ditampilkan berjejer horizontal full  'lg:static' -->
+            <!-- ketika ukuran layar Large sembunyikan bayangan dan sudut membulat 'lg:shadow-none lg:rounded-none' -->
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <!-- tampilan Nav Menu mobile berurutan -->
+              <!-- ketika ukuran layar Large jejerkan Nav Menu 'lg:flex'  -->
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <!-- Header End -->
-    
+
     <!-- Hero Start -->
-    <section id="home" class="pt-24"> <!-- pt-36 -->
-        <div class="container">
-            <div class="flex flex-wrap">
-                <!-- Left -->
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl ">Halo Semua, saya 
-                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Zul W.</span>
-                    </h1>
-                    <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Web Developer</h2>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed">Tailwind Css Portofolio
-                        <span class="font-bold text-dark">@w__zine</span>
-                    </p>
-                    <!-- Button -->
-                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
-                </div>
-                <!-- Right -->
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="img/ZW Profile.png" alt="Zul W" class="max-w-full mx-auto">
-                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg  width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#14b8a6" d="M27.1,-22.6C42.2,-11.9,66.6,-5.9,73.6,7C80.6,19.9,70.2,39.9,55.1,51.8C39.9,63.6,19.9,67.5,8.3,59.1C-3.3,50.8,-6.7,30.4,-20.9,18.5C-35.2,6.7,-60.5,3.3,-67.9,-7.4C-75.3,-18.1,-64.8,-36.2,-50.5,-46.9C-36.2,-57.7,-18.1,-61,-6.1,-54.9C5.9,-48.8,11.9,-33.3,27.1,-22.6Z" transform="translate(100 100) scale(1.1)" />
-                            </svg>
-                        </span>
-                    </div>
-                </div>
+    <section id="home" class="pt-24">
+      <!-- pt-36 -->
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- Left -->
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Halo Semua, saya
+              <span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl"
+                >Zul W.</span
+              >
+            </h1>
+            <h2 class="mb-5 text-lg font-medium text-slate-500 lg:text-2xl">
+              Web Developer
+            </h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">
+              Tailwind Css Portofolio
+              <span class="font-bold text-dark">@w__zine</span>
+            </p>
+            <!-- Button -->
+            <a
+              href="#"
+              class="rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              >Hubungi Saya</a
+            >
+          </div>
+          <!-- Right -->
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img
+                src="img/ZW Profile.png"
+                alt="Zul W"
+                class="mx-auto max-w-full"
+              />
+              <span
+                class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#14b8a6"
+                    d="M27.1,-22.6C42.2,-11.9,66.6,-5.9,73.6,7C80.6,19.9,70.2,39.9,55.1,51.8C39.9,63.6,19.9,67.5,8.3,59.1C-3.3,50.8,-6.7,30.4,-20.9,18.5C-35.2,6.7,-60.5,3.3,-67.9,-7.4C-75.3,-18.1,-64.8,-36.2,-50.5,-46.9C-36.2,-57.7,-18.1,-61,-6.1,-54.9C5.9,-48.8,11.9,-33.3,27.1,-22.6Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
             </div>
-            
+          </div>
         </div>
+      </div>
     </section>
     <!-- Hero End -->
 
     <!-- About Start -->
-    <section id="about" class="pt-36 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <!-- Left -->
-                <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Zul W.</h2>
-                    <p class="font-medium text-base text-secondary max-w-md lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias aliquam aperiam harum nulla nesciunt qui expedita.</p>
-                </div>
-                <!-- Right -->
-                <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
-                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi alias magnam qui labore maxime facere.
-                    </p>
-                    <!-- Social Media -->
-                    <div class="flex items-center">
-                        <!-- Youtube -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                        </a>
-                        <!-- X -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="18" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
-                        </a>
-                        <!-- Tiktok -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                        </a>
-
-                    </div>
-                </div>
+    <section id="about" class="pb-32 pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- Left -->
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">
+              Tentang Saya
+            </h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">
+              Zul W.
+            </h2>
+            <p class="max-w-md text-base font-medium text-secondary lg:text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestias aliquam aperiam harum nulla nesciunt qui expedita.
+            </p>
+          </div>
+          <!-- Right -->
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl"
+            >
+              Mari Berteman
+            </h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              nisi alias magnam qui labore maxime facere.
+            </p>
+            <!-- Social Media -->
+            <div class="flex items-center">
+              <!-- Youtube -->
+              <a
+                href="#"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="#"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!-- X -->
+              <a
+                href="#"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="18"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>X</title>
+                  <path
+                    d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
+                  />
+                </svg>
+              </a>
+              <!-- Tiktok -->
+              <a
+                href="#"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>TikTok</title>
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
     <!-- About End -->
 
     <!-- Portofolio Start -->
-    <section id="portofolio" class="pt-24 pb-16 bg-slate-100">
-        <div class="container">
-            <!-- Portofolio Title -->
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
-                    <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolore debitis reiciendis rem voluptatibus quas, eum corporis est sit sapiente.</p>
-                </div>
-            </div>
-            <!-- Portofolio Image -->
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <!-- Image 01 -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/portofolio/porto 01.jpg" alt="Marina Voss" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Marina Voss Landing Page</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut cum eveniet.</p>
-                </div>
-                <!-- Image 02 -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/portofolio/porto 02.jpg" alt="E-commerce" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">GAZU Fashion E-commerce</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut cum eveniet.</p>
-                </div>
-                <!-- Image 03 -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/portofolio/porto 03.jpg" alt="Niko Kane" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Niko Kane Portofolio</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut cum eveniet.</p>
-                </div>
-                
-            </div>
+    <section id="portofolio" class="bg-slate-100 pb-16 pt-24">
+      <div class="container">
+        <!-- Portofolio Title -->
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Portofolio</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+            >
+              Project Terbaru
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              dolore debitis reiciendis rem voluptatibus quas, eum corporis est
+              sit sapiente.
+            </p>
+          </div>
         </div>
+        <!-- Portofolio Image -->
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+        >
+          <!-- Image 01 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="img/portofolio/porto 01.jpg"
+                alt="Marina Voss"
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+              Marina Voss Landing Page
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              aut cum eveniet.
+            </p>
+          </div>
+          <!-- Image 02 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="img/portofolio/porto 02.jpg"
+                alt="E-commerce"
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+              GAZU Fashion E-commerce
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              aut cum eveniet.
+            </p>
+          </div>
+          <!-- Image 03 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="img/portofolio/porto 03.jpg"
+                alt="Niko Kane"
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+              Niko Kane Portofolio
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              aut cum eveniet.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Portofolio End -->
 
     <!-- Clients Start -->
-    <section id="clients" class="pt-24 pb-32 bg-slate-700">
-        <div class="container">
-            <!-- Clients Title -->
-            <div class="w-full px-4">
-                <div class="w-full px-4">
-                    <div class="mx-auto text-center mb-16">
-                        <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-                        <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">kerja sama</h2>
-                        <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus.</p>
-                    </div>
-                </div>
+    <section id="clients" class="bg-slate-700 pb-32 pt-24">
+      <div class="container">
+        <!-- Clients Title -->
+        <div class="w-full px-4">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 text-center">
+              <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
+              <h2
+                class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+              >
+                kerja sama
+              </h2>
+              <p class="text-md font-medium text-secondary md:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                natus.
+              </p>
             </div>
-            <!-- Clients List -->
-            <div class="w-full px-4">
-                <div class="flex flex-wrap justify-center items-center">
-                    <!-- clients 01 -->
-                    <a href="#" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="img/clients/Google.svg.webp" alt="Google" >
-                    </a>
-                    <!-- clients 02 -->
-                    <a href="#" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="img/clients/Google.svg.webp" alt="Google" >
-                    </a>
-                    <!-- clients 03 -->
-                    <a href="#" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="img/clients/Google.svg.webp" alt="Google" >
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Clients List -->
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <!-- clients 01 -->
+            <a
+              href="#"
+              class="mx-4 max-w-[50px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="img/clients/Google.svg.webp" alt="Google" />
+            </a>
+            <!-- clients 02 -->
+            <a
+              href="#"
+              class="mx-4 max-w-[50px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="img/clients/Google.svg.webp" alt="Google" />
+            </a>
+            <!-- clients 03 -->
+            <a
+              href="#"
+              class="mx-4 max-w-[50px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="img/clients/Google.svg.webp" alt="Google" />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Clients End -->
 
-
     <!-- Blog Start -->
-    <section id="blog" class="pt-24 pb-32 bg-slate-100">
-        <div class="container">
-            <!-- Blog Title -->
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-                    <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus aliquam iure dolore officia!</p>
-                </div>
-            </div>
-            <!-- Blog Posts -->
-            <!-- jika layar Large content jadi 2, ketika XL content jadi 3 -->
-            <div class="flex flex-wrap"> 
-                <!-- Blog Post 01 --> 
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <!-- image -->
-                        <img src="img/blog/07 (Z022 Grid).jpg" alt="Z022 Grid" class="w-full">
-                        <!-- content -->
-                        <div class="py-8 px-6">
-                            <!-- content title -->
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
-                                <h3>Z022 Grid</h3>
-                            </a>
-                            <!-- content description -->
-                            <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                            <!-- content button -->
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-300 ease-in-out">Baca Selengkapnya</a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- Blog Post 02 --> 
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <!-- image -->
-                        <img src="img/blog/2024 Desktop Background - GROW EVOLVE TRANSFORM.jpg" alt="Grow Evolve Transform" class="w-full">
-                        <!-- content -->
-                        <div class="py-8 px-6">
-                            <!-- content title -->
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
-                                <h3>Grow Evolve Transform</h3>
-                            </a>
-                            <!-- content description -->
-                            <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                            <!-- content button -->
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-300 ease-in-out">Baca Selengkapnya</a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- Blog Post 03 --> 
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <!-- image -->
-                        <img src="img/blog/ZW - Dekstop Lockscreen 2022.jpg" alt="ZW 2022" class="w-full">
-                        <!-- content -->
-                        <div class="py-8 px-6">
-                            <!-- content title -->
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
-                                <h3>ZW 2022</h3>
-                            </a>
-                            <!-- content description -->
-                            <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                            <!-- content button -->
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-300 ease-in-out">Baca Selengkapnya</a>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
+    <section id="blog" class="bg-slate-100 pb-32 pt-24">
+      <div class="container">
+        <!-- Blog Title -->
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+            >
+              Tulisan Terkini
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
+              aliquam iure dolore officia!
+            </p>
+          </div>
         </div>
+        <!-- Blog Posts -->
+        <!-- jika layar Large content jadi 2, ketika XL content jadi 3 -->
+        <div class="flex flex-wrap">
+          <!-- Blog Post 01 -->
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+              <!-- image -->
+              <img
+                src="img/blog/07 (Z022 Grid).jpg"
+                alt="Z022 Grid"
+                class="w-full"
+              />
+              <!-- content -->
+              <div class="px-6 py-8">
+                <!-- content title -->
+                <a
+                  href="#"
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                >
+                  <h3>Z022 Grid</h3>
+                </a>
+                <!-- content description -->
+                <p class="mb-6 text-base font-medium text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+                <!-- content button -->
+                <a
+                  href="#"
+                  class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition duration-300 ease-in-out hover:opacity-80"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Blog Post 02 -->
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+              <!-- image -->
+              <img
+                src="img/blog/2024 Desktop Background - GROW EVOLVE TRANSFORM.jpg"
+                alt="Grow Evolve Transform"
+                class="w-full"
+              />
+              <!-- content -->
+              <div class="px-6 py-8">
+                <!-- content title -->
+                <a
+                  href="#"
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                >
+                  <h3>Grow Evolve Transform</h3>
+                </a>
+                <!-- content description -->
+                <p class="mb-6 text-base font-medium text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+                <!-- content button -->
+                <a
+                  href="#"
+                  class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition duration-300 ease-in-out hover:opacity-80"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Blog Post 03 -->
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+              <!-- image -->
+              <img
+                src="img/blog/ZW - Dekstop Lockscreen 2022.jpg"
+                alt="ZW 2022"
+                class="w-full"
+              />
+              <!-- content -->
+              <div class="px-6 py-8">
+                <!-- content title -->
+                <a
+                  href="#"
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                >
+                  <h3>ZW 2022</h3>
+                </a>
+                <!-- content description -->
+                <p class="mb-6 text-base font-medium text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+                <!-- content button -->
+                <a
+                  href="#"
+                  class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition duration-300 ease-in-out hover:opacity-80"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Blog End -->
 
     <!-- Contact Start -->
-    <section id="contact" class="pt-24 pb-32">
-        <div class="container">
-            <div class="w-full px-4">
-                <!-- Contact Title -->
-                <div class="w-full px-4">
-                    <div class="max-w-xl mx-auto text-center mb-16">
-                        <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
-                        <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.</p>
-                    </div>
-                </div>
-                <!-- Contact Form -->
-                <form>
-                    <!-- lebar ayar Large2/3 posisi tengah-->
-                    <div class="w-full lg:w-2/3 lg:mx-auto">
-                        <!-- Name -->
-                        <div class="w-full px-4 mb-8">
-                            <label for="name" class="text-base font-bold text-primary">
-                            Nama
-                            </label>
-                            <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">                    
-                        </div>
-                        <!-- Email -->
-                        <div class="w-full px-4 mb-8">
-                            <label for="email" class="text-base font-bold text-primary">
-                            Email
-                            </label>
-                            <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">                    
-                        </div>
-                        <!-- Pesan -->
-                        <div class="w-full px-4 mb-8">
-                            <label for="message" class="text-base font-bold text-primary">
-                            Pesan
-                            </label>
-                            <textarea id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>                 
-                        </div>
-                        <!-- Submit Button -->
-                        <div class="w-full px-4">
-                            <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ease-in-out">
-                                Kirim
-                            </button>
-                        </div>
-                    </div>
-                </form>
+    <section id="contact" class="pb-32 pt-24">
+      <div class="container">
+        <div class="w-full px-4">
+          <!-- Contact Title -->
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 max-w-xl text-center">
+              <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+              <h2
+                class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              >
+                Hubungi Saya
+              </h2>
+              <p class="text-md font-medium text-secondary md:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                doloremque.
+              </p>
             </div>
+          </div>
+          <!-- Contact Form -->
+          <form>
+            <!-- lebar ayar Large2/3 posisi tengah-->
+            <div class="w-full lg:mx-auto lg:w-2/3">
+              <!-- Name -->
+              <div class="mb-8 w-full px-4">
+                <label for="name" class="text-base font-bold text-primary">
+                  Nama
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                />
+              </div>
+              <!-- Email -->
+              <div class="mb-8 w-full px-4">
+                <label for="email" class="text-base font-bold text-primary">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                />
+              </div>
+              <!-- Pesan -->
+              <div class="mb-8 w-full px-4">
+                <label for="message" class="text-base font-bold text-primary">
+                  Pesan
+                </label>
+                <textarea
+                  id="message"
+                  class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                ></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div class="w-full px-4">
+                <button
+                  class="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-500 ease-in-out hover:opacity-80 hover:shadow-lg"
+                >
+                  Kirim
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
     <!-- Contact End -->
 
     <!-- Footer Start -->
     <footer class="bg-dark pt-16">
-        <div class="container">
-            <!-- Detail -->
-            <div class="flex flex-wrap">
-                <!-- Alamat -->
-                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-                    <a href="#home" class="hover:text-primary block mb-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1857.69 600" width="120">
-                            <g>
-                                <g>
-                                    <path d="M750.66,1254.62v-79.68l122.2-432.22H761.71V665.38H966.94V738l-122.2,439.25H964.26v77.34Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                    
-                                    <path d="M1067.34,1254.62V665.38h89.72v589.24Z" transform="translate(-31.15 -660)"
-                                        fill="currentColor" />
-                    
-                                    <path
-                                        d="M1288.26,1254.62V665.38h70.31l124.88,353.54-6.36-160.7V665.38h80.68v589.24h-63.61L1365.93,888.69l5,154.67v211.26Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                    
-                                    <path d="M1687.3,1254.62V665.38h197.53v77.34H1777V914.13h102.45V989.8H1777v187.48h111.83v77.34Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                                </g>
-                    
-                                <g>
-                                    <path
-                                        d="M636.39,696.32a116.85,116.85,0,0,0-78.74-36.16h-.31l-.45,0-.94,0h-.16c-1.41-.05-2.84-.08-4.27-.08-24.94,0-50,7.84-71.47,22.21-22.21,13.17-42.81,31.28-61.43,54.09-24.32,29.76-44.07,66.12-58.71,108.07q-5.25,15-9.8,30.61-4.56-15.54-9.81-30.62c-14.63-41.94-34.38-78.3-58.7-108.06-18.63-22.81-39.23-40.93-61.44-54.1-21.43-14.36-46.52-22.2-71.47-22.2-1.42,0-2.85,0-4.26.08l-1.1,0-.45,0h-.31A117.74,117.74,0,0,0,31.15,777.89a41.28,41.28,0,1,0,82.56,0,35,35,0,0,1,32.67-35,48.91,48.91,0,0,1,19.75,4.43,107.46,107.46,0,0,1,9.84,4.92l.75.54a41.13,41.13,0,0,0,7.41,4.49c32.1,21.63,60,62.12,78.26,114.46,39,111.73,45.53,256.24,46.47,317-.21,17.87,0,29,.06,30.87,0,0,0,.05,0,.07,0,.48,0,.95.07,1.42,0,.22,0,.44,0,.66,0,.52.1,1,.15,1.54l.06.52c.06.5.14,1,.22,1.49,0,.19.05.37.09.56.08.45.17.91.27,1.36,0,.22.08.44.13.66.1.4.2.8.31,1.2s.13.52.2.78.21.7.32,1.05.18.6.28.9.21.61.32.91.24.67.37,1,.22.53.33.79.29.71.45,1.06.23.48.34.72.34.73.52,1.09l.36.67c.19.36.38.73.59,1.08s.26.44.39.66.41.7.63,1l.44.66.65,1,.51.7c.22.29.43.59.66.88l.59.73.64.78.69.77c.2.23.4.46.61.68s.52.54.79.8.38.39.58.58.58.56.88.83l.54.49,1,.84.5.41c.36.29.71.56,1.08.83l.47.36,1.15.8.46.31c.4.26.8.52,1.21.77l.45.27c.42.24.84.48,1.27.71l.46.25c.42.23.85.44,1.29.65l.48.24,1.31.58.52.22,1.31.51.57.2c.43.16.86.3,1.3.44l.63.19c.42.13.85.25,1.28.36l.68.18,1.27.28c.24.06.49.11.73.15.42.08.84.16,1.27.22.25,0,.5.08.76.12l1.28.16.76.08,1.34.1.69,0,.78,0h2.18c.57,0,1.13,0,1.7-.08l.36,0c.58,0,1.17-.1,1.74-.18l.32,0c.58-.07,1.16-.16,1.74-.26l.31-.05c.57-.11,1.13-.22,1.69-.35l.34-.07c.55-.13,1.09-.27,1.63-.42l.36-.1c.52-.15,1-.32,1.55-.49l.4-.13c.5-.17,1-.35,1.48-.54l.43-.17,1.41-.59.44-.2c.46-.21.91-.43,1.35-.65l.45-.23c.44-.23.87-.46,1.3-.71l.45-.25c.43-.25.85-.51,1.27-.77l.42-.26c.42-.28.84-.56,1.25-.85l.38-.27c.42-.3.83-.61,1.24-.93a3.92,3.92,0,0,0,.32-.25c.43-.33.84-.68,1.25-1l.26-.22c.43-.37.85-.76,1.26-1.15l.19-.17c.43-.41.85-.84,1.26-1.27l.12-.12c.43-.45.85-.92,1.26-1.39l.06-.06c.42-.5.84-1,1.24-1.52h0a41.47,41.47,0,0,0,5.91-10.29l0-.09c.22-.55.43-1.12.62-1.69a2,2,0,0,0,.08-.22c.18-.52.33-1,.49-1.57l.12-.39c.13-.47.25-.94.36-1.42.05-.19.11-.39.15-.58.1-.42.18-.84.26-1.26.05-.26.11-.51.15-.77s.12-.74.17-1.11.11-.63.15-1,.07-.68.1-1,.08-.71.1-1.07,0-.69.06-1,0-.7.05-1v-.1c.05-1.89.27-13,0-30.87.91-60.78,7.36-205.26,46.34-317,18.26-52.34,46.16-92.83,78.26-114.47a40.51,40.51,0,0,0,7.41-4.48l.74-.54a106.52,106.52,0,0,1,9.86-4.92,48.69,48.69,0,0,1,19.73-4.43,35,35,0,0,1,32.68,35,41.28,41.28,0,1,0,82.55,0A117.54,117.54,0,0,0,636.39,696.32Z"
-                                        transform="translate(-31.15 -660)" fill="currentColor" />
-                                </g>
-                            </g>
-                        </svg>
-                    </a>
-                    <h3 class="font-bold text-2xl mb-2">
-                        Hubungi Saya
-                    </h3>
-                    <p>@w__zine</p>
-                    <p>by.zulwahyu@gmail.com</p>
-                    <p>Indonesia</p>
-                </div>
-                <!-- Kategori Tulisan -->
-                <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-white mb-5">
-                        Kategori Tulisan
-                    </h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Z022 Grid</a>
-                        </li>
-                        <li>
-                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Grow Evolve Transform</a>
-                        </li>
-                        <li>
-                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">ZW 2022</a>
-                        </li>                        
-                    </ul>
-                </div>
-                <!-- Tautan -->
-                <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-white mb-5">
-                        Tautan
-                    </h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">About</a>
-                        </li>
-                        <li>
-                            <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">Portofolio</a>
-                        </li>
-                        <li>
-                            <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Clients</a>
-                        </li>
-                        <li>
-                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
-                        </li>
-                    </ul>
-                </div>         
-            </div>
-            <!-- Web creator -->
-            <div class="w-full pt-10 pb-6 border-t border-slate-800 ">
-                <!-- Social Media -->
-                <div class="flex items-center justify-center mb-5">
-                        <!-- Youtube -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                        </a>
-                        <!-- X -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="18" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
-                        </a>
-                        <!-- Tiktok -->
-                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary  hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                        </a>
-                </div>
-                <!-- Copyright -->
-                <div class="flex justify-center">
-                <p class="font-medium text-xs text-slate-500">
-                    <span class="font-bold text-primary">Zul W. </span> @2026
-                    <a href="https://tailwindcss.com" target="_blank" class="font-medium text-sky-500">TailwindCSS</a>
-                </p>
-                </div>
-            </div>
+      <div class="container">
+        <!-- Detail -->
+        <div class="flex flex-wrap">
+          <!-- Alamat -->
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+            <a href="#home" class="mb-10 block hover:text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1857.69 600"
+                width="120"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M750.66,1254.62v-79.68l122.2-432.22H761.71V665.38H966.94V738l-122.2,439.25H964.26v77.34Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+
+                    <path
+                      d="M1067.34,1254.62V665.38h89.72v589.24Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+
+                    <path
+                      d="M1288.26,1254.62V665.38h70.31l124.88,353.54-6.36-160.7V665.38h80.68v589.24h-63.61L1365.93,888.69l5,154.67v211.26Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+
+                    <path
+                      d="M1687.3,1254.62V665.38h197.53v77.34H1777V914.13h102.45V989.8H1777v187.48h111.83v77.34Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+                  </g>
+
+                  <g>
+                    <path
+                      d="M636.39,696.32a116.85,116.85,0,0,0-78.74-36.16h-.31l-.45,0-.94,0h-.16c-1.41-.05-2.84-.08-4.27-.08-24.94,0-50,7.84-71.47,22.21-22.21,13.17-42.81,31.28-61.43,54.09-24.32,29.76-44.07,66.12-58.71,108.07q-5.25,15-9.8,30.61-4.56-15.54-9.81-30.62c-14.63-41.94-34.38-78.3-58.7-108.06-18.63-22.81-39.23-40.93-61.44-54.1-21.43-14.36-46.52-22.2-71.47-22.2-1.42,0-2.85,0-4.26.08l-1.1,0-.45,0h-.31A117.74,117.74,0,0,0,31.15,777.89a41.28,41.28,0,1,0,82.56,0,35,35,0,0,1,32.67-35,48.91,48.91,0,0,1,19.75,4.43,107.46,107.46,0,0,1,9.84,4.92l.75.54a41.13,41.13,0,0,0,7.41,4.49c32.1,21.63,60,62.12,78.26,114.46,39,111.73,45.53,256.24,46.47,317-.21,17.87,0,29,.06,30.87,0,0,0,.05,0,.07,0,.48,0,.95.07,1.42,0,.22,0,.44,0,.66,0,.52.1,1,.15,1.54l.06.52c.06.5.14,1,.22,1.49,0,.19.05.37.09.56.08.45.17.91.27,1.36,0,.22.08.44.13.66.1.4.2.8.31,1.2s.13.52.2.78.21.7.32,1.05.18.6.28.9.21.61.32.91.24.67.37,1,.22.53.33.79.29.71.45,1.06.23.48.34.72.34.73.52,1.09l.36.67c.19.36.38.73.59,1.08s.26.44.39.66.41.7.63,1l.44.66.65,1,.51.7c.22.29.43.59.66.88l.59.73.64.78.69.77c.2.23.4.46.61.68s.52.54.79.8.38.39.58.58.58.56.88.83l.54.49,1,.84.5.41c.36.29.71.56,1.08.83l.47.36,1.15.8.46.31c.4.26.8.52,1.21.77l.45.27c.42.24.84.48,1.27.71l.46.25c.42.23.85.44,1.29.65l.48.24,1.31.58.52.22,1.31.51.57.2c.43.16.86.3,1.3.44l.63.19c.42.13.85.25,1.28.36l.68.18,1.27.28c.24.06.49.11.73.15.42.08.84.16,1.27.22.25,0,.5.08.76.12l1.28.16.76.08,1.34.1.69,0,.78,0h2.18c.57,0,1.13,0,1.7-.08l.36,0c.58,0,1.17-.1,1.74-.18l.32,0c.58-.07,1.16-.16,1.74-.26l.31-.05c.57-.11,1.13-.22,1.69-.35l.34-.07c.55-.13,1.09-.27,1.63-.42l.36-.1c.52-.15,1-.32,1.55-.49l.4-.13c.5-.17,1-.35,1.48-.54l.43-.17,1.41-.59.44-.2c.46-.21.91-.43,1.35-.65l.45-.23c.44-.23.87-.46,1.3-.71l.45-.25c.43-.25.85-.51,1.27-.77l.42-.26c.42-.28.84-.56,1.25-.85l.38-.27c.42-.3.83-.61,1.24-.93a3.92,3.92,0,0,0,.32-.25c.43-.33.84-.68,1.25-1l.26-.22c.43-.37.85-.76,1.26-1.15l.19-.17c.43-.41.85-.84,1.26-1.27l.12-.12c.43-.45.85-.92,1.26-1.39l.06-.06c.42-.5.84-1,1.24-1.52h0a41.47,41.47,0,0,0,5.91-10.29l0-.09c.22-.55.43-1.12.62-1.69a2,2,0,0,0,.08-.22c.18-.52.33-1,.49-1.57l.12-.39c.13-.47.25-.94.36-1.42.05-.19.11-.39.15-.58.1-.42.18-.84.26-1.26.05-.26.11-.51.15-.77s.12-.74.17-1.11.11-.63.15-1,.07-.68.1-1,.08-.71.1-1.07,0-.69.06-1,0-.7.05-1v-.1c.05-1.89.27-13,0-30.87.91-60.78,7.36-205.26,46.34-317,18.26-52.34,46.16-92.83,78.26-114.47a40.51,40.51,0,0,0,7.41-4.48l.74-.54a106.52,106.52,0,0,1,9.86-4.92,48.69,48.69,0,0,1,19.73-4.43,35,35,0,0,1,32.68,35,41.28,41.28,0,1,0,82.55,0A117.54,117.54,0,0,0,636.39,696.32Z"
+                      transform="translate(-31.15 -660)"
+                      fill="currentColor"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <h3 class="mb-2 text-2xl font-bold">Hubungi Saya</h3>
+            <p>@w__zine</p>
+            <p>by.zulwahyu@gmail.com</p>
+            <p>Indonesia</p>
+          </div>
+          <!-- Kategori Tulisan -->
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white">
+              Kategori Tulisan
+            </h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Z022 Grid</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Grow Evolve Transform</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >ZW 2022</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Tautan -->
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Clients</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- Web creator -->
+        <div class="w-full border-t border-slate-800 pb-6 pt-10">
+          <!-- Social Media -->
+          <div class="mb-5 flex items-center justify-center">
+            <!-- Youtube -->
+            <a
+              href="#"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="#"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                />
+              </svg>
+            </a>
+            <!-- X -->
+            <a
+              href="#"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="18"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>X</title>
+                <path
+                  d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
+                />
+              </svg>
+            </a>
+            <!-- Tiktok -->
+            <a
+              href="#"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>TikTok</title>
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Copyright -->
+          <div class="flex justify-center">
+            <p class="text-xs font-medium text-slate-500">
+              <span class="font-bold text-primary">Zul W.</span> @2026
+              <a
+                href="https://tailwindcss.com"
+                target="_blank"
+                class="font-medium text-sky-500"
+                >TailwindCSS</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Footer End -->
 
-<script src="js/script.js"></script>
+    <!-- Back to Top  Start -->
+    <a
+      id="to-top"
+      href="#home"
+      class="fixed -right-2 bottom-0 z-[9999] hidden p-6 text-slate-300 hover:text-primary"
+    >
+      <span class="block">
+        <svg
+          width="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 12L12 8M12 8L8 12M12 8V16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+    </a>
 
-</body>
+    <!-- Back to Top  Start -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
