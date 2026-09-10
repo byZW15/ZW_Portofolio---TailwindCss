@@ -37,3 +37,22 @@ window.addEventListener("click", function (e) {
     navMenu.classList.add("hidden");
   }
 });
+
+// DarkMode Toggle
+// Variabel darkToggle: Ambil Checkbox id:dark-toggle
+// ketika di refresh Darkmode tetap: local.storage
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.checked = localStorage.theme === "dark";
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+// pindahkan posisi bulatan toggle

@@ -6,11 +6,21 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <title>ZW Portofolio - TailwindCss</title>
+
+    <!-- local storage darkmode -->
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches),
+      );
+    </script>
   </head>
   <body>
     <!-- Header Start -->
     <header
-      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+      class="absolute left-0 top-0 flex w-full items-center bg-transparent"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
@@ -89,7 +99,7 @@
             <!-- ketika ukuran layar Large sembunyikan bayangan dan sudut membulat 'lg:shadow-none lg:rounded-none' -->
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              class="absolute right-4 top-full z-50 hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none dark:bg-dark dark:shadow-slate-700 lg:dark:bg-transparent"
             >
               <!-- tampilan Nav Menu mobile berurutan -->
               <!-- ketika ukuran layar Large jejerkan Nav Menu 'lg:flex'  -->
@@ -97,44 +107,62 @@
                 <li class="group">
                   <a
                     href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >About</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portofolio"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Portofolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Blog</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Contact</a
                   >
+                </li>
+                <!-- DarkMode Toggle -->
+                <!-- flex item-center untuk di tengah dan jarak dari kiri padding left-->
+                <li class="mt-6 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -145,7 +173,7 @@
     <!-- Header End -->
 
     <!-- Hero Start -->
-    <section id="home" class="pt-24">
+    <section id="home" class="pt-24 dark:bg-dark">
       <!-- pt-36 -->
       <div class="container">
         <div class="flex flex-wrap">
@@ -153,16 +181,21 @@
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Halo Semua, saya
-              <span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl"
+              <span
+                class="mt-1 block text-4xl font-bold text-dark lg:text-5xl dark:text-white"
                 >Zul W.</span
               >
             </h1>
-            <h2 class="mb-5 text-lg font-medium text-slate-500 lg:text-2xl">
+            <h2
+              class="mb-5 text-lg font-medium text-slate-500 lg:text-2xl dark:text-slate-300"
+            >
               Web Developer
             </h2>
             <p class="mb-10 font-medium leading-relaxed text-secondary">
               Tailwind Css Portofolio
-              <span class="font-bold text-dark">@w__zine</span>
+              <span class="font-bold text-dark dark:text-slate-300"
+                >@w__zine</span
+              >
             </p>
             <!-- Button -->
             <a
@@ -177,10 +210,10 @@
               <img
                 src="img/ZW Profile.png"
                 alt="Zul W"
-                class="mx-auto max-w-full"
+                class="relative z-10 mx-auto max-w-full"
               />
               <span
-                class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125"
+                class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
               >
                 <svg
                   width="400"
@@ -203,7 +236,7 @@
     <!-- Hero End -->
 
     <!-- About Start -->
-    <section id="about" class="pb-32 pt-36">
+    <section id="about" class="pb-32 pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <!-- Left -->
@@ -211,7 +244,9 @@
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">
               Tentang Saya
             </h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">
+            <h2
+              class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl dark:text-white"
+            >
               Zul W.
             </h2>
             <p class="max-w-md text-base font-medium text-secondary lg:text-lg">
@@ -222,7 +257,7 @@
           <!-- Right -->
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl"
+              class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl dark:text-white"
             >
               Mari Berteman
             </h3>
@@ -316,14 +351,14 @@
     <!-- About End -->
 
     <!-- Portofolio Start -->
-    <section id="portofolio" class="bg-slate-100 pb-16 pt-24">
+    <section id="portofolio" class="bg-slate-100 pb-32 pt-24 dark:bg-slate-800">
       <div class="container">
         <!-- Portofolio Title -->
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Portofolio</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-white"
             >
               Project Terbaru
             </h2>
@@ -347,7 +382,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
               Marina Voss Landing Page
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -364,7 +401,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
               GAZU Fashion E-commerce
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -381,7 +420,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
               Niko Kane Portofolio
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -445,14 +486,14 @@
     <!-- Clients End -->
 
     <!-- Blog Start -->
-    <section id="blog" class="bg-slate-100 pb-32 pt-24">
+    <section id="blog" class="bg-slate-100 pb-32 pt-24 dark:bg-dark">
       <div class="container">
         <!-- Blog Title -->
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-white"
             >
               Tulisan Terkini
             </h2>
@@ -467,7 +508,9 @@
         <div class="flex flex-wrap">
           <!-- Blog Post 01 -->
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
+            >
               <!-- image -->
               <img
                 src="img/blog/07 (Z022 Grid).jpg"
@@ -479,12 +522,14 @@
                 <!-- content title -->
                 <a
                   href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                 >
                   <h3>Z022 Grid</h3>
                 </a>
                 <!-- content description -->
-                <p class="mb-6 text-base font-medium text-secondary">
+                <p
+                  class="mb-6 text-base font-medium text-secondary dark:text-slate-300"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
@@ -499,7 +544,9 @@
           </div>
           <!-- Blog Post 02 -->
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
+            >
               <!-- image -->
               <img
                 src="img/blog/2024 Desktop Background - GROW EVOLVE TRANSFORM.jpg"
@@ -511,12 +558,14 @@
                 <!-- content title -->
                 <a
                   href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                 >
                   <h3>Grow Evolve Transform</h3>
                 </a>
                 <!-- content description -->
-                <p class="mb-6 text-base font-medium text-secondary">
+                <p
+                  class="mb-6 text-base font-medium text-secondary dark:text-slate-300"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
@@ -531,7 +580,9 @@
           </div>
           <!-- Blog Post 03 -->
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
+            >
               <!-- image -->
               <img
                 src="img/blog/ZW - Dekstop Lockscreen 2022.jpg"
@@ -543,12 +594,14 @@
                 <!-- content title -->
                 <a
                   href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                 >
                   <h3>ZW 2022</h3>
                 </a>
                 <!-- content description -->
-                <p class="mb-6 text-base font-medium text-secondary">
+                <p
+                  class="mb-6 text-base font-medium text-secondary dark:text-slate-300"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
@@ -567,7 +620,7 @@
     <!-- Blog End -->
 
     <!-- Contact Start -->
-    <section id="contact" class="pb-32 pt-24">
+    <section id="contact" class="pb-32 pt-24 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
           <!-- Contact Title -->
@@ -575,7 +628,7 @@
             <div class="mx-auto mb-16 max-w-xl text-center">
               <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
               <h2
-                class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+                class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-white"
               >
                 Hubungi Saya
               </h2>
@@ -871,7 +924,7 @@
     <a
       id="to-top"
       href="#home"
-      class="fixed -right-2 bottom-0 z-[9999] hidden p-6 text-slate-300 hover:text-primary"
+      class="fixed -right-2 bottom-0 z-[9999] hidden p-6 text-slate-300 hover:text-primary dark:text-secondary"
     >
       <span class="block">
         <svg
